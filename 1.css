@@ -58,11 +58,11 @@ h2, h3 {
 .container {
   display: grid;
   grid-template-areas:
-    "header header header"
+    "about job job"
     "menu education education"
     "albums interests picture"
     "footer footer footer";
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 15px;
   background-color: rgba(255, 255, 255, 0);
   padding: 5px;
@@ -73,8 +73,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 border-radius: 15px;
   padding: 30px; 
 }
-.container > div.header {
-  grid-area: header;
+.container > div.about {
+  grid-area: about;
+}
+.container > div.job {
+  grid-area: job;
   text-align: center;
 }
 .container > div.menu {
