@@ -1,0 +1,129 @@
+
+* {
+    font-family: Arial, sans-serif;
+    color:#2c3e50 ;
+
+
+}
+body {
+    background-image: url('image/pink.jpg');
+
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.486);
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.nav-section {
+    background-color: #FFC0CB;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.nav-section ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-section li {
+    margin: 0 15px;
+}
+
+.nav-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-section a:hover {
+    background-color: #ed42a6;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu education education"
+    "albums interests picture"
+    "footer footer footer";
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.608);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+  padding: 30px; 
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+  text-align: left;
+}
+.container > div.education {
+  grid-area: education;
+}
+.container > div.albums {
+  grid-area: albums;
+  
+}
+.container > div.interests {
+  grid-area: interests;
+}
+.container > div.picture {
+  grid-area: picture;
+}
+
+.container a:hover {
+    background-color: #ed42a688;
+}
+
+.container > div.footer {
+  grid-area: footer;
+}
+.zebra-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zebra-table tr:nth-child(even) {
+        background-color: #dda0dd94;
+
+}
+
+.zebra-table tr:nth-child(odd) {
+    background-color: #d9c5d987;
+}
+a {
+    color:#DA70D6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+img {
+  border-radius: 50%;
+}
